@@ -1,0 +1,3 @@
+O operador NÃO inverte a lógica, se a expressão é True mas a um NO na 
+frente ela se torna FALSE se a expressão é FALSE mas tem um NO na frente 
+ela se torna TRUE.

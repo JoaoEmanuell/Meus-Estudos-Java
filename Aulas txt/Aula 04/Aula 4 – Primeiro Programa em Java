@@ -1,0 +1,34 @@
+Todo progama em Java possui uma public class que é o nome do projeto, e 
+uma public static void main(String[] args) que é a classe principal.
+
+E possui também um pacote, basicamente o pacote serve para organizar as 
+classes.
+
+package nome;
+public class nome {
+	public static void main(String[] args) {
+		
+	}
+}
+
+Algumas coisas no java são escritos em letras maisculas, caso não 
+escreva ele irá considerar que está errado.
+
+System.out.print("Mensagem"); = escreve a mensagem na tela
+
+Caso escreva sout e aperte TAB o netbeans irá automaticamente criar o 
+comando para você.
+
+psvm = public static void main(String[] args) 
+
+println = escreve e pula uma linha.
+
+CamelCase:
+
+Primeira letra maiscula é uma classe/interface
+
+As outras letras podem ser uma var um atributo ou um método
+
+Se tiver só letras minusculas é nome de pacote
+
+Se todas as letras forem maisculas é uma constante

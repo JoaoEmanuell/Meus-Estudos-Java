@@ -1,0 +1,13 @@
+JDK comandos:
+
+Java = Executa um aplicativo java
+
+Javac = Compila um progama java
+
+.Java = todo arquivo java termina com essa extensão
+
+.class = todo arquivo compilado termina com essa extensão
+
+Um código compilado usa mais memória mas leva menos tempo para ser 
+executado, já um código interpretado usa menos memória mas leva mais 
+tempo para ser executado.

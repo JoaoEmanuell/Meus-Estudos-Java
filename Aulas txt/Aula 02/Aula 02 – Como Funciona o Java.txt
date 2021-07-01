@@ -1,0 +1,45 @@
+O código em Java para ser interpretado para a maquina tem que passar 
+pelos seguintes processos:
+
+Codigo fonte > Compilador Java (JavaC) > Bytecode > Java Virtual Machine 
+(JVM) > Codigo executavel.
+
+O código fonte passa pelo compilador e é convertido em um Bytecode, o 
+detalhe é que o bytecode não pode ser interpretado pela máquina, por 
+isso o bytecode passa pela JVM e se transforma em um código que pode ser 
+lido e executado pela máquina.
+
+Apesar do processo ser maior do que o natural, o java possui uma 
+vantagem, o Bytecode pode ser gerado por um compilador de qualquer 
+sistema operacional, mas ao ser enviado para o JVM ele pode ser 
+interpretado no sistema especifico dela, ou seja se o código for 
+compilado em um windows, o bytecode ao ser interpretado pela JVM pode 
+rodar em uma máquina com outro sistema operacional.
+
+Quem quer apenas utilizar o java vai usar o JRE, quem quiser desenvolver 
+em java vai usar o JDK
+
+JRE = Java Runtime Environment (Ambiente de execução Java)
+
+O JRE é composto pela JVM e bibliotecas
+
+A JVM possui o Loader/Verificiador, que irá interpretar o bytecode e 
+verificar se ele pode ser executado dentro da sua máquina.
+
+Interpretador/Gerenciador, que irá interpretar o btyecode e fazer ele 
+ser executado na linguagem da sua máquina, já o Gerenciador será 
+responsavel por gerenciar o uso da mémoria.
+
+Compliador JIT (Just In Time)
+
+JDK = Java Development Kit (Ambiente de desenvolvimento Java)
+
+Dentro do JDK já tem o JRE
+
+Além disso ele já vem com a linguagem java chamada de JavaLang
+
+E as JavaTools, dentro dela vem o JavaC (Compilador java), Debugger (Que 
+permite você verificar como o seu progama está sendo executado em tempo 
+real) e APIs.
+
+Dentro do JDK não vem uma IDE, porém você pode anexar ela ao JDK.
