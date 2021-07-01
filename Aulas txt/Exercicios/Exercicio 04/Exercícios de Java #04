@@ -1,0 +1,17 @@
+import java.util.Date;
+Date nome = new Date();
+
+Cria uma var que detem a data do seu sistema
+
+var..toString() = converte aquela var para uma string
+
+import java.util.Locale;
+
+Locale var1 = Locale.getDefault();
+
+Cria uma var que detem o local padrão do seu sistema
+
+String nome = var1.getDisplayLanguage();
+
+Cria uma var com string que irá pegar a var que você criou com o local 
+padrão e dizer qual é o a linguagem que o dispositivo está usando.
