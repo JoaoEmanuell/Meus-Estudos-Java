@@ -1,0 +1,18 @@
+Digite main que ele irá criar isso:
+public static void main(String[] args) {
+
+    }
+    
+Quando um progama em Java for executado, o primeiro lugar que o computador irá procurar para executar, será a "public static void main(String[] args)", o main é a instrução principal do progama Java.
+
+Tudo executado será de cima para baixo e os dados tem que ser armazenados em propiedades/variaveis.
+
+Método/Funções são instruções (blocos de códigos) reutilizáveis para alterar dados
+
+Para criar uma instrução use:
+
+static void nome(){
+        comandos
+    }
+    
+// linha de comentario

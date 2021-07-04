@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Aulas/Aula 05/Aula/target/
+/Aulas/Aula 05/mavenproject1/target/

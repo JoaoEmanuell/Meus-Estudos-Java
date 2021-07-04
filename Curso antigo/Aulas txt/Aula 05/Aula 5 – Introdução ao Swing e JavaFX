@@ -1,0 +1,17 @@
+A biblioteca Swing permite que você crie janelas para ambientes que 
+possuem interface gráfica.
+
+Va em new file, Swing GUI Forms, selecione JFrame Form
+
+Quando você criar irá ter a aba de codigo, design e history, no desgin, 
+selecione o que você deseja e arraste para a tela
+
+Clicando com o botão direito e em change variable name, vc edita o nome 
+da variavel.
+
+Clicando com o botão direito em cima do botão, em events, action e na 
+unica opção possivel, ele irá te levar para uma aréa de codigo que irá 
+ser executado quando o botão receber um clique.
+
+nomedavar.setText("Texto"); = irá subistituir o texto pelo texto 
+desejado.
