@@ -1,0 +1,12 @@
+Definir váriavel:
+
+	var nome = dados; ou
+	tipo nome = dados; //Esse modo funciona em modos antigos do java
+
+Sub var cont:
+
+	nome = cont;
+
+Declarar váriavel:
+
+	tipo nome; // Dessa forma eu só declarei a var mas não adicionei nada a ela

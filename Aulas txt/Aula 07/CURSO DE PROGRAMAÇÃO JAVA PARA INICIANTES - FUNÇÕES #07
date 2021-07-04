@@ -1,0 +1,15 @@
+Para declarar uma função faça o seguinte:
+
+	static void nome(tipo_primitivo nome_var){
+	
+	}
+	
+os paramentros devem ser escritos dessa forma, o tipo primitivo na frente, um espaço e o nome que será dado ao paramentro, caso use "return valor" ele irá retornar o que você deseja.
+
+// static void -> Declaração padrão
+// sum -> Nome da função, geralmente usamos verbos para definir o que a função faz
+// parenteses usamos para definir o que chegará naquela função
+// (tipo nomeDaVariavel)
+// {} -> bloco de código que será executado
+
+
