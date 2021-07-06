@@ -1,0 +1,15 @@
+Float.parseFloat(elemento); = converte o elemento para um elemento float
+
+var.equals(condição) = caso a variavel seja igual a condição 
+estabelecida ele irá definir com True, útil para IF, seria equivalente 
+ao == mas aparentemente isso não existem em Java.
+
+static tipo_retorno nome(paramentros){
+	return retorno;
+}
+
+	cria uma função que irá retornar um valor, o tipo do valor deve 
+	ser informado tanto se você for retornar uma var quanto se você 
+	for usar outra coisa, o tipo do retorno deve ser informado em 
+	tipo_retorno antes do nome da função, caso não retorne nada 
+	coloque "void" que quer dizer uma função sem retorno.

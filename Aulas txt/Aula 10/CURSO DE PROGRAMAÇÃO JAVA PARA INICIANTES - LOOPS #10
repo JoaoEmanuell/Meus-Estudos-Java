@@ -1,0 +1,24 @@
+import java.util.Random; = importa o util.Random.
+
+Random nome = new Random(); = cria uma var com o tipo aleatoria que 
+recebe um novo objeto com as propiedades da classe Random.
+
+	random_var.nextInt(limite); = irá gerar um número inteiro 
+	aleatorio baseado no limite.
+
+while (condição){
+	bloco
+	condição++; //para não entrar em loop infiinito
+}// loop com saida
+
+while (true){
+	bloco
+} // loop infinito
+
+for (var_inicial; condição; incremento //var_ini++){
+	bloco
+}// loop com saida
+
+for (;;){
+	bloco
+}// loop infinito
