@@ -1,0 +1,17 @@
+Para criar uma var que use um pacote importado use:
+
+Tipo var = new Tipo();
+
+Normalmente o Tipo sempre vai se referir ao nome do pacote.
+
+Para criar um pacote crie uma pasta e na classe em que você deseja coloque:
+
+package mome.da.pasta;
+
+É importante ressaltar que ao invés de usar espaços você usa .
+
+E para importar é só usar:
+
+import nome.da.pasta.Class;
+
+

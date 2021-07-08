@@ -1,0 +1,5 @@
+import java.util.Scanner;// Importa Scanner, pacote util para interação via terminal.
+
+Scanner scanner = new Scanner(System.in); // var que recebe o objeto de interação com o pacote Scanner, obrigatoriamente ele irá pedir do "System.in" como paramentro.
+        
+scanner.nextLine(); // Espera que o user digite algo na proxima linha.

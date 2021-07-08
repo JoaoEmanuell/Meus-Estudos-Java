@@ -1,0 +1,98 @@
+Default:
+
+	static tipo_retorno nome(tipo_primitivo nome_paramentro){
+		bloco
+    }
+
+	tipo_retorno é o tipo primitivo do valor do retorno, caso não 
+	exista nenhum coloque "void", caso tenha paramentros declare da 
+	seguinte maneira, "tipo_primitivo nome_paramentro" caso tenha 
+	mais de um coloque uma , depois e repita o processo, caso tenha 
+	um retorno coloque "return retorno;", lembre-se que o tipo do 
+	retorno deve ser especificado em tipo_retorno.
+
+	// linha de comentario
+
+	while (condição){
+		bloco
+		condição++; //para não entrar em loop infiinito
+	}// loop com saida
+
+	while (true){
+		bloco
+	} // loop infinito
+
+	for (var_inicial; condição; incremento //var_ini++){
+		bloco
+	}// loop com saida
+
+	for (;;){
+		bloco
+	}// loop infinito
+
+Váriaveis:
+
+	var nome = dados; ou
+	tipo nome = dados; //Esse modo funciona em modos antigos do java
+
+	nome = cont; // Reescreve o valor da var
+
+	tipo nome; // Dessa forma eu só declarei a var mas não adicionei 
+	nada a ela
+
+	Tipo_primitivo[] nome = cria um paramentro ou uma var que pode 
+	receber diversos itens de um tipo especifico, ou seja uma lista.
+
+Conversão:
+
+	Float.parseFloat(elemento); = converte o elemento para um 
+	elemento float
+
+Condições:
+
+	var.equals(condição) = caso a variavel seja igual a condição 
+	estabelecida ele irá definir com True, útil para IF, seria equivalente 
+	ao == mas aparentemente isso não existem em Java.
+
+Random:
+
+	import java.util.Random; // importa o util.Random.
+
+	// Random serve para randorizar itens.
+
+
+	Random nome = new Random(); = cria uma var com o tipo aleatoria que 
+	recebe um novo objeto com as propiedades da classe Random.
+
+	random_var.nextInt(limite); = irá gerar um número inteiro 
+	aleatorio baseado no limite.
+
+Pacotes:
+
+	Para criar uma var que use um pacote importado use:
+
+	Tipo var = new Tipo();
+
+	Normalmente o Tipo sempre vai se referir ao nome do pacote.
+
+	Para criar um pacote crie uma pasta e na classe em que você 
+	deseja coloque:
+
+	package mome.da.pasta;
+
+	É importante ressaltar que ao invés de usar espaços você usa .
+
+	E para importar é só usar:
+
+	import nome.da.pasta.Class;
+
+Scanner:
+
+	import java.util.Scanner;// Importa Scanner, pacote util para 
+	interação via terminal.
+
+	Scanner scanner = new Scanner(System.in); // var que recebe o objeto de 
+	interação com o pacote Scanner, obrigatoriamente ele irá pedir do 
+	"System.in" como paramentro.
+        
+	scanner.nextLine(); // Espera que o user digite algo na proxima linha.
