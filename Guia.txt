@@ -42,6 +42,8 @@ Váriaveis:
 
 	Tipo_primitivo[] nome = cria um paramentro ou uma var que pode 
 	receber diversos itens de um tipo especifico, ou seja uma lista.
+	
+	final tipo_primitivo nome = valor; //var constante ou seja uma var imutavel.
 
 Conversão:
 
@@ -96,3 +98,66 @@ Scanner:
 	"System.in" como paramentro.
         
 	scanner.nextLine(); // Espera que o user digite algo na proxima linha.
+	
+VISIBILIDADE DE ESCOPO:
+
+	//No caso eu me referi sempre a var, porém com exeção ao default para funções, todas as regras se aplicam.
+	
+	A visibilidade de escopo, possui 4 tipos:
+
+	default
+
+	public
+
+	private
+
+	protected
+
+	======================================================
+
+	visibilidade static tipo_primitivo nome; //declara a várivel
+
+	======================================================
+
+	default: 
+
+		Quando você coloca a var sem declarar nada na 
+		frente, ela pode ser acessada por qualquer 
+		classe que esteja dentro do pacote onde essa 
+		var se encontra.
+
+		default static tipo_primitivo nome;
+		
+		Nesse caso a palavra "default" é opcional, uma 
+		vez que toda declaração de var automaticamente 
+		é criada como default
+		
+	public:
+
+		Quando se informa "public" como visibilidade 
+		de escopo, automaticamente essa var se torna 
+		acessavel por qualquer pacote desde que o 
+		pacote importe a classe que está var está 
+		informada.
+		
+		public static tipo_primitivo nome;
+		
+	private:
+
+		Quando se informa "private" como visibilidade 
+		de escopo, automaticamente essa var só se 
+		torna acessavel dentro da propia classe, mesmo
+		se um pacote possuir a importação dela, essa
+		var não poderá ser acessada pois ela é 
+		"privada" ao pacote especificado
+		
+		private static tipo_primitivo nome;
+		
+	protected:
+
+		Isso ainda não foi explicado :/
+	/*
+
+	Isso tudo também se aplica ao conceito de funções, com exceção ao default, ele não existe nas funções.
+
+	*/
