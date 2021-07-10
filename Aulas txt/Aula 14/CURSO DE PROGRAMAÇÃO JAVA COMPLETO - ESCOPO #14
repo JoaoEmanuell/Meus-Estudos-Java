@@ -1,0 +1,31 @@
+O escopo é a posição em que a var está dentro do bloco.
+
+Exemplo:
+
+	public static void main(String[] args) {
+		
+		if (true){
+		
+			int x = 10;
+		}
+		
+		System.out.println(x); 
+	}
+	
+Isso irá dar um erro pois quando o bloco do if é terminado a var é destruida.
+
+Poranto para isso funcionar a var precisa ser criada fora desse bloco:
+
+	public static void main(String[] args) {
+		
+		int x;
+		
+		if (true){
+		
+			x = 10;
+		}
+		
+		System.out.println(x); 
+	}
+	
+Agora sim irá funcionar.

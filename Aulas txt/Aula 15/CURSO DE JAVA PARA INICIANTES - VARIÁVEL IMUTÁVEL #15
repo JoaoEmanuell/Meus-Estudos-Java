@@ -1,0 +1,5 @@
+Naturalmente podemos mudar o valor de uma váriavel, porém para evitar erros com vars que precisam ter um valor fixo, podemos forçar a var a se tornar uma constante, uma constante não pode ser mudada:
+
+	final tipo_primitivo nome = valor;
+	
+Dessa forma essa váriavel nunca pode ser mudada.

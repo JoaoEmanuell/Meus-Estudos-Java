@@ -1,0 +1,7 @@
+Itens com os tipos não primitivos são itens que ocupam mais memoria porém contém mais funções, eles funcionam igual a itens com tipos primitivos:
+
+	int x = v; // Tipo primitivo inteiro
+	
+	Integer y = v; // Tipo não primitivo inteiro
+
+De preferencias a tipos primitivos quando for armazenar valores menores, senão de use os tipos não primitivos.
