@@ -161,3 +161,65 @@ VISIBILIDADE DE ESCOPO:
 	Isso tudo também se aplica ao conceito de funções, com exceção ao default, ele não existe nas funções.
 
 	*/
+	
+TIPOS PRIMITIVOS:
+
+	/* criação de var
+		
+		tipo_primitivo nome = valor;	
+		
+	*/
+	
+	int = armazena números inteiros // entre -2147483647 e 2147483647
+	
+	double = armazena números reais, com um limite de 64 bits //entre -9,2234×10¹⁸ e 9,2234×10¹⁸
+	
+	boolean = armazena True ou False;
+	
+	byte = armazena números até 127 e caracteres que podem ser convertidos para números. //entre -127 e 127
+
+	char = armazena apenas um caractere especifico.
+
+	short = ele é praticamente igual a um int, porém com menos espaço de alocação, ou seja ele não consegue armazera números gigantes. //
+	entre -32767 e 32767
+
+	long = ele é praticamente igual a um int, porém serve para alocar números gigantes, números que o int não poderia armazenar pois não 
+	possui alocação suficiente, no final do número você deve colocar um L. //entre -9,2234×10¹⁸ e 9,2234×10¹⁸
+
+	float = 32bits (menor que o double) tem que ser informado um f no final do número, o double armazena até 64bits. // entre -2147483647 e 2147483647
+
+CONVERSÃO TIPOS PRIMTIIVOS:
+
+	casting nada mais é do que a conversão de tipos primitivos:
+
+		(tipo_novo) valor_tipo_antigo;
+		
+		Ele irá tentar converter, caso de algum erro ele irá retornar 0.
+		
+		(int) 62.39;
+		
+		Também serve se usar váriaveis.
+	
+	Lembresse que a conversão pode gerar percas, pois um espaço de alocação pode ser menor do que o outro.
+	
+MANIPULAÇÃO DE STRINGS:
+
+	str.length() //tamanho da str
+
+	str + "string literal" // concatena a str com uma str literal que você escreveu ou uma var
+
+	str.contains("palavra") // verifica se a str contem uma palavra especificada
+
+	str.indexOf("palavra") // verifica a partir de qual caractere uma palavra começa
+
+	str.lastIndexOf("palavra") // verifica onde é a ultima vez que a palavra aparece
+
+	str.toUpperCase() // faz todas as letras da str ficarem maisculas
+
+	str.toLowerCase() // faz todas as letras da str ficarem minusculas
+
+	str.trim() // remove os espaços no inicio e no fim da str
+
+	str.substring(number) // começa a escrever a frase a partir do caractere informado
+
+	str.equals("Texto") // verifica se o paramentro é igual a str, pode se usar número, equals é uma comparação entre valores de str.
