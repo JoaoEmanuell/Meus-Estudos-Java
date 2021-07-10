@@ -1,20 +1,13 @@
 public class MeuPrimeiroProgama {
 
-    // caso eu declare uma variavel ela terá o escopo padrão, portanto só poderá ser acessada por outras
-    // classes que estejam no mesmo pacote dela.
-
-    //static int x; //Só por ser acessada por outras classes que estão no mesmo pacote que essa
-
-    //public static int x; //Pode ser acessada por qualquer pacote desde que ele importe esse pacote
-
-    //private static int x; //Só pode ser acessada por funções dessa classe, nenhum outro pode acessar ela
-
     public static void main(String[] args) {
-        // Visibilidade de escopo
+        //tipos primitivos
+        byte b = 127; // armazena números até 127 e caracteres que podem ser convertidos para números
+        char c = 'c'; // armazena um caractere especifico
+        short s = 129; // = int, só que com menos espaço de alocação, ele aloca menos números
+        long l = 1946847868L; // = int, só que com mais espaço de alocação, lembresse de colocar um L no final dos números
+        float f = 19.45f; // 32bits (menor que o double) informe o f no final
+
     }
 
-    public static int sum(final int x, final int y){
-        final int summ = x + y;
-        return summ;
-    }
 }

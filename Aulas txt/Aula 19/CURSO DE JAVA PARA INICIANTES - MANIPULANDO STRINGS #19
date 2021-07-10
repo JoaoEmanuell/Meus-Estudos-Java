@@ -1,0 +1,23 @@
+//Basico da manipulação
+
+str.metodo()
+
+str.length() //tamanho da str
+
+str + "string literal" // concatena a str com uma str literal que você escreveu ou uma var
+
+str.contains("palavra") // verifica se a str contem uma palavra especificada
+
+str.indexOf("palavra") // verifica a partir de qual caractere uma palavra começa
+
+str.lastIndexOf("palavra") // verifica onde é a ultima vez que a palavra aparece
+
+str.toUpperCase() // faz todas as letras da str ficarem maisculas
+
+str.toLowerCase() // faz todas as letras da str ficarem minusculas
+
+str.trim() // remove os espaços no inicio e no fim da str
+
+str.substring(number) // começa a escrever a frase a partir do caractere informado
+
+str.equals("Texto") // verifica se o paramentro é igual a str, pode se usar número, equals é uma comparação entre valores de str.

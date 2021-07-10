@@ -1,0 +1,32 @@
+casting nada mais é do que a conversão de tipos primitivos:
+
+	(tipo_novo) valor_tipo_antigo;
+	
+	Ele irá tentar converter, caso de algum erro ele irá retornar 0
+	
+	(int) 62.39;
+	
+	Também serve se usar váriaveis
+	
+Lembresse que a conversão pode gerar percas, pois um espaço de alocação pode ser menor do que o outro.
+
+Exemplo:
+
+	double dd = 26.72;
+        short ss = 26;
+        
+        System.out.println(dd / ss);
+        
+        Retornará: 1.0276923076923077
+        
+        Mas a mesma expressão sendo convertida para 
+        float:
+        
+        float te = (float) dd / ss;
+        System.out.println(te);
+        
+        Retornará: 1.0276923
+        
+        Pois o float guarda a metade do tamanho de um double // entre -2147483647 e 2147483647
+        
+Isso pode ser feito com qualquer tipo primitivo, a conversão entre tipos e objetos ainda será explicada

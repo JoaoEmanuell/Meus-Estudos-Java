@@ -1,0 +1,9 @@
+byte = armazena números até 127 e caracteres que podem ser convertidos para números.
+
+char = armazena apenas um caractere especifico.
+
+short = ele é praticamente igual a um int, porém com menos espaço de alocação, ou seja ele não consegue armazera números gigantes.
+
+long = ele é praticamente igual a um int, porém serve para alocar números gigantes, números que o int não poderia armazenar pois não possui alocação suficiente, no final do número você deve colocar um L.
+
+float = 32bits (menor que o double) tem que ser informado um f no final do número, o double armazena até 64bits.
