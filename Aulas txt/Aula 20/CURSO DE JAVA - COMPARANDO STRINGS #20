@@ -1,0 +1,5 @@
+== não compara o conteudo, ele compara a referencia dos objetos, ou seja ele verifica se o espaço de memoria é igual ao da outra var String, caso não seja ele irá retornar false.
+
+Caso queira compara strings use:
+
+string1.equals(string2)
