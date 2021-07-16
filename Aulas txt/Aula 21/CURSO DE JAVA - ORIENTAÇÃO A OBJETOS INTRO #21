@@ -1,0 +1,35 @@
+Qualquer coisa criada dentro do mundo computacional é tratada como objeto para que no futuro ela possa ser utilizada novamente.
+
+Todo objeto precisa de um molde para existir no mundo computacional.
+
+Você pode criar um arquivo .java que detenha membros ou metodos:
+
+	public Tipo nome;
+	
+	public static tipo nome(paramentros) {
+		
+		bloco	
+		
+	}
+
+dessa forma em outro arquivo você pode criar uma var que seja um objeto contendo todas as informações do outro arquivo:
+
+	Nome_arquivo nome_objeto = new Nome_arquivo();
+	
+Dessa forma essa objeto irá conter todos os dados do arquivo.
+
+Para chamar os membros ou metodos faça da seguinte maneira:
+
+	objeto.membro-ou-metodo = dado;
+	
+Dessa forma você pode criar quantos objetos desejar e adicionar quantos dados quiser, pois eles terão tudo que você adicionou a eles.
+
+Os comportamentos que um objeto tem são os verbos, as ações que aquele objeto pode realizar.
+
+Exemplo:
+
+	Uma guitarra pode tocar.
+	
+	Um carro pode acelerar, abastecer, reduzir...
+	
+Esses comportamentos são os metodos ou funções.
