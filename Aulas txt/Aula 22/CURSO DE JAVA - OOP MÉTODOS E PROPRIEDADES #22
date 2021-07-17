@@ -1,0 +1,3 @@
+Normalmente definimos como privado uma propiedade de um objeto quando queremos que ela não seja alterada.
+
+Geralmente métodos são setados como publicos e sempre tem retornos.
