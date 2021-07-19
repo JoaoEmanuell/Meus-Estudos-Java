@@ -1,0 +1,32 @@
+Para criar um objeto array que armazene um determinado número de dados, você cria assim:
+
+ClasseMãe[] nomeobjeto = new ClasseMãe[quantidade];
+
+Porém para adicionar não é tão simples, pois o Java não permite uma adição da seguinte maneira:
+
+nomeobjeto[pos].setMetodo(dado)
+
+Isso irá dar um erro, então para isso crie um objeto não array que detenha os dados da ClasseMãe:
+
+ClasseMãe nomeobjetoatual = new ClasseMãe()
+
+Adicione os dados nele por meio dos métodos:
+
+nomeobjetoatual.setMetodo(Dado);
+
+Depois adicione esse objeto atual ao objeto array:
+
+objetoarray[pos] = nomeobjetoatual;
+
+Dessa forma ele irá adicionar os dados.
+
+Mas caso você queria adicionar para testar pode usar um for:
+
+for(int i = 0; i < users.length; i++) {
+    User actual = new User();
+    actual.setFirstName("Nome " + i);
+    actual.setLastName("Sobrenome " + i);
+    users[i] = actual;
+}
+
+.length determina o tamanho de um array.

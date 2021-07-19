@@ -1,0 +1,19 @@
+Normalmente as propiedades são declaradas como sendo privadas para evitar alterações
+
+Com isso criamos funções que servem para setar os dados nas propiedades:
+
+private tipo nomePropiedade;
+
+public void setNomePropiedade (Tipo nomePropiedadeParamentro){
+    this.nomePropiedadeVar = nomePropiedadeParamentro;
+}
+
+o "this" serve para que o Java se referencie a variavel declarada acima e não ao paramentro, normalmente o paramentro recebe o mesmo nome da propiedade e normalmente o paramentro é sempre uma função ao invés de um tipo primitivo solo, pois funções são mais fáceis de serem alterados (caso eu queria setar alguma configuração especifica).
+
+Mas dessa forma temos um problema, pois podemos inserir dados mas não acessa-los, para isso criamos outra função, que serve para retornar o dado da função especifica:
+
+public tipo getNomePropiedade (){
+    return nomePropiedade;
+}
+
+Essa função irá servir apenas para retornar o valor da propiedade, dessa forma evitando que o usuario faça alguma besteira ou altere algo de forma errada (e também para o progamador não cometer erros para alterar algo errado).
