@@ -1,2 +1,2 @@
 # Meus-Estudos-Java
-Meus estudos na linguagem de progamção Java
+Meus estudos na linguagem de progamação Java
