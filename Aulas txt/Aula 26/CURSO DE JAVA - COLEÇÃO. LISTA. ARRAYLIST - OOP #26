@@ -1,0 +1,15 @@
+ArrayList são semelhantes aos arrays porém eles são 100% dinamicos:
+
+Para criar um objeto que detenha um arraylist faça da seguinte maneira:
+
+List<ClasseMãe> nomeobjeto = new ArrayList<>();
+
+Dessa forma esse objeto terá um array list.
+
+Para adicionar coisas em um array list faça da seguinte maneira:
+
+    nomeobjeto.add(objeto);
+
+Para verificar o que está dentro de um índice, faça da seguinte maneira:
+
+    nome objeto.get(pos);

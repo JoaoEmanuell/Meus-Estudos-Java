@@ -1,0 +1,27 @@
+O construtor serve para que quando inicializamos o objeto ele já receba os dados principais.
+
+Para criar um construtor vá na classe mãe e crie uma classe publica que tenha o mesmo nome da classe mãe, essa classe será o construtor:
+
+public NomeClasse (Paramentros){
+    bloco
+}
+
+no campo dos paramentros você deve inserir o nome das propiedades (como se fossem os Setters)
+
+public NomeClasse (Tipo paramentro){
+    this.propiedade = paramentro;
+}
+
+Dessa forma ele automaticamente irá atribuir os dados passados para as propiedades.
+
+Agora no código onde você irá utiliza a classe você faz da seguinte maneira:
+
+ClasseMãe[] nomeobjeto = new ClasseMãe[]{
+    new ClasseMãe(Paramentros),
+}
+
+Dessa forma ele irá automaticamente atribuir o valor dos paramentros a classe, assim quando você quiser visualizar os dados atribuidos você faz da seguinte maneira:
+
+nomeobjeto[pos].metodo();
+
+Dessa forma ele irá acessar o objeto que está na posição especificada.
