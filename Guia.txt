@@ -223,3 +223,80 @@ MANIPULAÇÃO DE STRINGS:
 	str.substring(number) // começa a escrever a frase a partir do caractere informado
 
 	str.equals("Texto") // verifica se o paramentro é igual a str, pode se usar número, equals é uma comparação entre valores de str.
+	
+	== não compara o conteudo, ele compara a referencia dos objetos, ou seja ele verifica se o espaço de memoria é igual ao da outra var String, 
+	caso não seja ele irá retornar false.
+
+    string1.equals(string2) = verifica se uma string é identica a outra
+    
+ORIENTAÇÃO A OBJETO:
+
+    private Tipo nome; // Cria uma propiedade dentro de um arquivo de classe mãe do java, normalmente propiedades são definidas como privadas e 
+    alteradas por meio dos métodos
+    
+    public static tipo nome(paramentros) {
+		
+		bloco	
+		
+	} // Cria um método dentro da classe mãe, que na maioria das vezes altera o valor das propiedades ou retorna os mesmos para serem exibidos no arquivo princiopal.
+	
+	Nome_arquivo nome_objeto = new Nome_arquivo(); // cria um objeto que tem todos os atributos da classe mãe.
+	
+	objeto.membro-ou-metodo = dado; // atribui dados aquele objeto, que não irá de maneira nenhuma interferir na classe mãe
+	
+	//SETTERS, normalmente servem para setar um valor para as propiedades
+	
+	public void setNomePropiedade (Tipo nomePropiedadeParamentro){
+	
+        this.nomePropiedadeVar = nomePropiedadeParamentro;
+    }
+    
+    //GETTERS, normalmente servem para retornar um valor de determinada propiedade
+    
+    public tipo getNomePropiedade (){
+        return nomePropiedade;
+    }
+    
+ARRAYS:
+
+    ClasseMãe[] nomeobjeto = new ClasseMãe[quantidade]; // cria um objeto array que tem determinado tamanho.
+    
+    ClasseMãe nomeobjeto1 = new ClasseMãe; nomeobjeto1 = dados; nomeobjeto[pos] = nomeobjeto1; // Crie um objeto, atribua valores a ele e adicione ele no ponto desejado do objeto array.
+    
+    array.length; // retorna o tamanho da array
+    
+    Arrays.sort(array); // faz com que os itens do array sejam organizados em ordem alfanumerica.
+
+    System.out.println(array); // imprime o hashcode do array.
+
+    System.out.println(Arrays.toString(array)); // converte o array para string, fazendo com que ele possa ser impresso.
+    
+CONSTRUTOR:
+
+    /* Construtor é basicamente uma função que é chamada por padrão assim que sua classemãe é chamada, ela normalmente serve para atribuir 
+    valores as propiedades de forma obrigatoria, valores que devem ser passados assim que o objeto é criado */
+    
+    public NomeClasse (Paramentros){
+        bloco
+    } // Cria o construtor, no campo dos paramentros você deve inserir o nome das propiedades (como se fossem os Setters)
+    
+    /* No código você irá fazer da seguinte maneira: */
+    
+    ClasseMãe[] nomeobjeto = new ClasseMãe[]{
+        new ClasseMãe(Paramentros),
+    }
+    
+    /*Dessa forma ele irá automaticamente atribuir o valor dos paramentros a classe, assim quando você quiser visualizar os dados atribuidos você 
+    faz da seguinte maneira:*/
+
+    nomeobjeto[pos].metodo();
+
+    /*Dessa forma ele irá acessar o objeto que está na posição especificada.*/
+    
+LISTAS:
+
+    List<ClasseMãe> nomeobjeto = new ArrayList<>(); // cria uma objeto que tenha uma lista com classe mãe.
+    
+    nomeobjeto.add(objeto); // adicionar um objeto ao objeto lista
+    
+    nome objeto.get(pos); // retorna o que está armazenado na pos especifica da lista
