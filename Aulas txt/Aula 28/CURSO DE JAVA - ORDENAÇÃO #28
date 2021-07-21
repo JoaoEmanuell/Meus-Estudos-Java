@@ -1,0 +1,5 @@
+Arrays.sort(array); // faz com que os itens do array sejam organizados em ordem alfanumerica.
+
+System.out.println(array); // imprime o hashcode do array.
+
+System.out.println(Arrays.toString(array)); // converte o array para string, fazendo com que ele possa ser impresso.
