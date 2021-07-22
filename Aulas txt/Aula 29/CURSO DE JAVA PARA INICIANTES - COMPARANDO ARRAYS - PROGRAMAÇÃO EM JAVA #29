@@ -1,0 +1,5 @@
+Quando tentamos comparar os arrays usando == ou .equals eles não serão comparados, pois ambos irão comparar o endereço de mémoria, para comparamos arrays, usamos o seguinte:
+
+Arrays.equals(array1, array2);
+
+Dessa forma ele irá comparar o se o conteudo de um array é igual ao outro.
