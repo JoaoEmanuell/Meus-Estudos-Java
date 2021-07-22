@@ -271,6 +271,8 @@ ARRAYS:
 
     System.out.println(Arrays.toString(array)); // converte o array para string, fazendo com que ele possa ser impresso.
     
+    Arrays.equals(array1, array2); // Verifica se o conteudo de um array é igual ao conteudo do outro.
+    
 CONSTRUTOR:
 
     /* Construtor é basicamente uma função que é chamada por padrão assim que sua classemãe é chamada, ela normalmente serve para atribuir 
