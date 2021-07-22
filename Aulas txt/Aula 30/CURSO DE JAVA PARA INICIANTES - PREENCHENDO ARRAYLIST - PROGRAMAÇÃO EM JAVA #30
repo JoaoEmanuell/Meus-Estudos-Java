@@ -1,0 +1,1 @@
+Arrays.fill(array, valor); // Preenche todos os espaços do array com o valor indicado.
