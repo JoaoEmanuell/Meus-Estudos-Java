@@ -295,10 +295,22 @@ CONSTRUTOR:
 
     /*Dessa forma ele irá acessar o objeto que está na posição especificada.*/
     
-LISTAS:
+LISTAS (Arraylist):
 
-    List<ClasseMãe> nomeobjeto = new ArrayList<>(); // cria uma objeto que tenha uma lista com classe mãe.
+    List<ClasseMãe> nomeobjeto = new ArrayList<>(); // Cria uma objeto que tenha uma lista com classe mãe.
     
-    nomeobjeto.add(objeto); // adicionar um objeto ao objeto lista
+    nomeobjeto.add(objeto); // Adicionar um objeto ao objeto lista
     
-    nome objeto.get(pos); // retorna o que está armazenado na pos especifica da lista
+    nome objeto.get(pos); // Retorna o que está armazenado na pos especifica da lista
+    
+    Arrays.fill(array, valor); // Preenche todos os espaços do array com o valor indicado.
+    
+    arraylist.size() // Retorna o tamanho total do arraylist
+
+    arraylist.indexOf(dado) // Retorna a posição em que o dado se encontra, caso não encontre o dado ele retorna -1
+
+    arraylist.isEmpty() // Verifica se a lista está vaiza ou não
+
+    arraylist.contains(dado) // Verifica se a lista possui determinado dado, se possui retorna verdadeiro, senão retorna falso.
+
+    arraylist.clear() // Limpa de vez a lista, remove todos os elementos da mesma, clear tem o retorno como void, por isso não irá ter retorno. 
