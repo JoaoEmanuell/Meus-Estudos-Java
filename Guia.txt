@@ -29,6 +29,14 @@ Default:
 	for (;;){
 		bloco
 	}// loop infinito
+	
+	if (condição){// if simples
+	    bloco
+    } else if (condição) {// senão se
+        bloco
+    } else {// senão
+        bloco
+    }
 
 Váriaveis:
 
@@ -314,3 +322,10 @@ LISTAS (Arraylist):
     arraylist.contains(dado) // Verifica se a lista possui determinado dado, se possui retorna verdadeiro, senão retorna falso.
 
     arraylist.clear() // Limpa de vez a lista, remove todos os elementos da mesma, clear tem o retorno como void, por isso não irá ter retorno. 
+    
+    Collections.sort(lista); // ordena os itens da lista.
+    
+    for (Tipo nomeparamentro: lista) {
+        System.out.println(nomeparamentro); //pode ser um bloco 
+        } // Esse é o foreach, para cada elemento do tipo nomeparamentro na lista, escreva o nomeparamentro, serve para como se fosse um for 
+        porém muito mais simples.
