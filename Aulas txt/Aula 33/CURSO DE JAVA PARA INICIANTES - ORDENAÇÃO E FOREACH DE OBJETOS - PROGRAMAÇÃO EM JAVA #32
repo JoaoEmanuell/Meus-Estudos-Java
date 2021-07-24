@@ -1,0 +1,6 @@
+Collections.sort(lista); // ordena os itens da lista
+
+for (Tipo nomeparamentro: lista){
+    System.out.println(nomeparamentro); //pode ser um   
+    bloco
+} // Esse é o foreach, para cada elemento do tipo nomeparamentro na lista, escreva o nomeparamentro, serve para como se fosse um for porém muito mais simples.
