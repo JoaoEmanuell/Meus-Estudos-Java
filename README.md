@@ -1,5 +1,5 @@
 # Meus-Estudos-Java
-Meus estudos na linguagem de progamação Java
+Meus estudos na linguagem de progamação Java.
 
 # My-Studies-Java 
 My studies in the Java programming language.
