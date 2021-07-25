@@ -1,0 +1,48 @@
+POO = Progamação Orientada a Objetos.
+OOP = Object Oriented Progame.
+
+O objetivo da OOP é Aproximar o mundo digital do mundo real.
+
+No passado a progamação era de baixo nível, ou seja você dava os comandos na linguagem que o computador era capaz de entender.
+
+Depois disso surgiu a progamação linear, que é capaz de ser entendida por nós humanos, porém a progamação linear tem a dificuldade de que tudo tem que ser executado de cima para baixo, sem métodos internos.
+
+Depois disso surgiu a progamação estruturada, que consiste em ter pequenos trechos de progamação linear mas não necessariamente executa-los em ordem que aparecem, dessa forma começaram a aparecer os primeiros sitemas.
+
+Porém a progamação estruturada ainda tinha um problema, pois eram relativamente grandes as linhas de códigos, com isso surgiu a progamação modular, que consiste em pegar trechos de código, salva-los e utilizar-los novamente quando for necessario.
+
+Porém a progamação modular teve uma vida relativamente curta, pois logo em seguida surgiu a OOP Object Oriented Progame [Progamação Orientada a Objetos].
+
+Quem criou a primeira OOP foi o Alan Kay, Alan Kay era um biologo e mátematico.
+
+Qualquer conceito de OOP pode ser explicado com um objeto do mundo real.
+
+Alan Kay criou o Smalltalk, que pode ser considerada a primeira linguagem de progamação orientada a objeto.
+
+Ele criou ela para um projeto chamado de Dynabook, que tinha como objetivo ensinar coisas basicas para crianças, o Dynabook consistia em uma tela com um teclado em baixo para ter a interação com o usuario.
+
+No passado os dados globais eram tratados por procedimentos, porém nem todos os procedimentos irão fazer uso dessas massa de dados.
+
+No modelo atual, os dados de objetos são tratados por métodos especificos, que irão usar os dados do objeto, como cada método está ligado a um objeto é mais fácil para ele tratar os dados, você também pode relacionar os dados de objetos.
+
+Linguagens OOP:
+
+C++ , Java, PHP, Python, Ruby, Visual Basic...
+
+A grande maioria das linguagens modernas são OOP.
+
+Vantagens de se progamar orientado a objeto:
+
+COMERNada [é uma sigla que pode ser usada para facilitar a memorização dos conceitos de OOP]
+
+Confiável, todo software orientado a objeto é Confiável, O isolamento entre as partes gera um software seguro. Ao alterar uma parte, nenhuma outra é afetada.
+
+Oportuno, todo software orientado a objeto é Oportuno, Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo.
+
+Manutenível, todo software orientado a objeto é Manutenível, Atualizar um software é mais fácil. Uma pequena modificação via beneficiar odas as partes que usarem o objeto.
+
+Extensível, todo software orientado a objeto é Extensível, O software não é estático. Ele deve crescer para permanecer útil, ou seja eu não preciso descartar tudo ao fazer uma atualização, eu so preciso adicionar as novas coisas.
+
+Reutilizável, todo software orientado a objeto é Reutilizável, Podemos usar objetos de um sistema que criamos em outro sistema futuro, eu posso pegar o software é reutilizar ele, por exemplo, uma classe que serve para cadastrar alunos, eu posso pegar ela e adicionar em uma academia, fazendo pequenas mudanças.
+
+Natural, todo software orientado a objeto é Natural, Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes da implementação.
