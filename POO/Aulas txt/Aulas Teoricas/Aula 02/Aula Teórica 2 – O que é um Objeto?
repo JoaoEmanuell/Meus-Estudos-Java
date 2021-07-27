@@ -1,0 +1,124 @@
+Um objeto é uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual.
+
+Ou seja tudo aquilo que tiver caracteristica, estado ou comportamento pode ser classificado como objeto.
+
+O "molde" de um objeto é uma classe, uma vez que ela será considerada a mãe de todos os objetos, a diferença entre um objeto e o outro será minima pois todos seguem a mesma classe, porém isso não impede um objeto de ter caracteristicas individuais.
+
+Em oop uma classe tem que obdecer a 3 perguntas:
+
+“Coisas que eu tenho”
+
+“Coisas que eu faço”
+
+“Como eu estou agora?”
+
+Exemplo aplicado a uma caneta:
+
+    “Coisas que eu tenho”
+
+        Modelo, Cor, Ponta, Carga, Tampada...
+
+    “Coisas que eu faço”
+    
+        Escrever, Rabiscar, Pintar, Tampar, 
+        Destampar...
+
+    “Como eu estou agora?”
+    
+        Varia depedendo de como o objeto se 
+        encontra
+        
+Na oop essas coisas tem nome:
+
+Coisas que eu tenho = Atributos
+
+Coisas que eu faço = Métodos
+
+Como eu estou agora? = Estado
+
+A classe é resumidamente o molde para gerar o objeto.
+
+Classe Caneta
+    
+    modelo: Caractere
+    cor: Caractere
+    ponta: Real
+    carga: Inteiro
+    tampada: Logico
+    
+    Metodo rabiscar()
+        Se (tampada) entao
+            Retorne "Erro"
+        senao
+            Escreval("Rabisco")
+        FimSe
+    FimMetodo
+    
+    Metodo tampar()
+        tampada = verdadeiro
+    FimMetodo
+FimClasse
+
+O estado (ou status) é sempre definida no momento atual do objeto, já que o Estado pode sempre váriar.
+
+Quando eu tenho uma classe e quero gerar um objeto a partir dela isso se chama “instanciar”
+
+Exemplo:
+
+    c1 = nova Caneta
+    c1.cor = "Azul"
+    c1.ponta = 0.5
+    c1.tampada = falso
+    c1.rabiscar()
+    
+    c2 = nova Caneta
+    c2.cor = "Vermelha"
+    c2.ponta = 1.0
+    c2.tampada = falso
+    c2.tampar()
+    
+Perceba que c1 é oriundo da mesma classe que c2, porém qualquer alteração feita em c1 não altera c2 e vice versa, eles são objetos independentes mas que herdam a mesma classe.
+
+Uma Classe Define os atributos e métodos comuns que serão compartilhados por um objeto, eu posso criar uma classe mas nunca instanciar ela em um objeto.
+
+Outro conceito da oop é a “ABSTRAÇÃO”:
+
+    A abstração consiste em iginorar atributos desnecessarios e focar somente naqueles que são necessarios para o momento.
+    
+Atividades:
+
+Identifique dois objetos físicos do seu ambiente e classifique-os:
+
+    Carregador:
+    
+        Modelo, cabo propio para carregamento rapido, conector, entradas usb.
+        
+        conectarCabo(), desconectarCabo(), ligarCarregador(), desligarCarregador().
+        
+        cabopropio quebrado, desconectado, uma entrada usb conectada.
+        
+    Máscara:
+    
+        Máscara, elastico, material, tamanho, marca.
+        
+        abrirMascara(), fecharMascara(), esticarElastico(), colocarMascara(), tirarMascara().
+        
+        mascaraFechada, elasticoBom.
+
+Identifique dois objetos conceituais do seu dia-a-dia e classifique-os.
+
+    AssistirAula:
+    
+        local, duração, conteudo, material.
+        
+        sair, entrar, começar, anotar.
+        
+        atividade, durando 30 minutos.
+        
+    Natacao:
+    
+        local, duração, trajeto, material.
+        
+        entrarnaPiscina, sairdaPiscina, nadar, meSecar, meMolhar.
+        
+        naoestaacontecendo.
