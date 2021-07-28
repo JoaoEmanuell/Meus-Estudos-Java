@@ -1,0 +1,9 @@
+NomeClasse nomeobjeto = new NomeClasse(); // Cria um objeto que recebe todos os atributos de uma classe.
+
+this.propiedade // this se referencia a o objeto qeu chamou, o this sera subistituido pelo nome do objeto na hora do código ser executado.
+
+public void status(){
+        System.out.println("Uma caneta " + this.cor);
+    }
+    
+retorna o status de um objeto, lembrando que não se pode utilizar static caso você queira usar o this, dessa forma so use “visibilidade retorno nome()” caso o contrario ele não irá conseguir se referenciar.
