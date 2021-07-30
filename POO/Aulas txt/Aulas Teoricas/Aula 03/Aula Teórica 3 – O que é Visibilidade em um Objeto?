@@ -1,0 +1,70 @@
+Linguagem de Modelagem Unificada [UML]
+
+Para o Diagrama de Classes, toda classe é um retangulo.
+
+Na parte superior [geralmente escrito em Negrito, colocamos o nome da classe]
+
+Depois fazemos dois traços, um separando a parte de cima e o outro no meio separando a parte de baixo.
+
+Entre o primeiro traço e o segundo colocamos os atributos [propiedades]
+
+Na parte de baixo inserimos os métodos da classe.
+
+As propiedades e métodos serão todos em letras minusculas, métodos tem parentes ao final dos seus nomes e classes sempre começam com a primeira letra maiscula.
+
+Modificadores de Visibilidade
+
+Indicam o nível de acesso aos componentes internos de uma classe.
+
+Simbolos:
+
++ = Visibilidade Pública
+
+- = Visibilidade Privada
+
+# = Visibilidade Protegida
+
++ = A classe atual e todas as outras classes podem ter acesso a esse elemento.
+
+- = Apenas a classe atual terá acesso.
+
+# = Apenas a classe atual e todas as suas sub-classes terão acesso a esse elemento.
+
+Agora no diagrama de classes, colocaremos a visibilidade da propiedade e da função na frente dela.
+
+Exemplo de diagrama de classes:
+
+_________________________________
+|           CANETA              |
+|-------------------------------|
+|+ modelo                       |
+|+ cor                          |
+|- ponta                        |
+|# carga                        |
+|# tampada                      |
+|-------------------------------|
+|+ escrever()                   |
+|+ rabiscar()                   |
+|+ pintar()                     |
+|- tampar()                     |
+|- destampar()                  |
+|-------------------------------|
+
+
+Em algoritimo:
+
+Classe Caneta
+    publico modelo: Caractere
+    publico cor: Caractere
+    privado ponta: Real
+    protegido carga: Inteiro
+    protegido tampada: Logico
+    
+    publico Metodo escrever()
+    
+    FimMetodo
+    
+    publico Metodo rabiscar()
+    
+    FimMetodo
+FimClasse
