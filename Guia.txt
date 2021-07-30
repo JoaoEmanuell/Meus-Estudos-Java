@@ -163,7 +163,8 @@ VISIBILIDADE DE ESCOPO:
 		
 	protected:
 
-		Isso ainda não foi explicado :/
+		Quando se informa "protected" como visibilidade de escopo, automaticamente essa var só se torna editavel por outras variaveis que sejam 
+		filhas da classe mãe.
 	/*
 
 	Isso tudo também se aplica ao conceito de funções, com exceção ao default, ele não existe nas funções.
