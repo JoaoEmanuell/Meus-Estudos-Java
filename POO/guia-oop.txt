@@ -6,7 +6,8 @@
 
     Uma classe seria um molde de criação que permite a você criar diversos objetos.
 
-    Um objeto é uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e 
+    Um objeto é uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos 
+    e 
     estado atual.
 
     Todo objeto é formado por propiedades, métodos e status.
@@ -33,10 +34,16 @@
     
     proteced = so pode ser editado pela classe atual e suas filhas
     
+    Definir visibilidade:
+    
+        visibilidade var/função = dados;
+    
 // Aula 04
 
     Getters = Servem para retornar os dados de uma determinada propiedade, normalmente não tem paramentros.
     
     Setters = Servem para setar os dados de uma determinada propeidade, normalmente tem paramentros.
     
-    Construct = É iniciado assim que a classe é chamada, serve para definir dados ao objeto sem que você precise escrever diversas linhas de setters, facilitando a beleza do código e o peso do mesmo, normalmente tem paramentros mas caso não tenha serve para definir um preset para o objeto.
+    Construct = É iniciado assim que a classe é chamada, serve para definir dados ao objeto sem que você precise escrever diversas linhas de 
+    setters, facilitando a beleza do código e o peso do mesmo, normalmente tem paramentros mas caso não tenha serve para definir um preset para o 
+    objeto.
