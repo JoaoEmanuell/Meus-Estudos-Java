@@ -1,0 +1,86 @@
+Métedos Acessores ou Getters, servem para permitir o acessor de determinado usuario a determinados dados sem afetar os dados de outros usuarios.
+
+Os getters acessam determinado atributo e retornarm o valor armazenado dentro deles.
+
+Normalmente getters não necessitam de paramentros.
+
+Métodos Modificadores ou Setters, servem para adicionar coisas as propiedades sem interferir diretamente na propiedade de outro elemento.
+
+Os setters acessam determinado atributo e adicionam o valor desejado dentro deles.
+
+Normalmente setters necessitam de paramentros.
+
+Exemplo com algoritimos:
+
+Classe Caneta
+
+    publico modelo: Caractere
+    privado ponta: Real
+    
+    publico Metodo getModelo()
+        retorne modelo
+    FimMetodo
+    
+    publico Metodo setModelo()
+        (m: Caractere)
+        modelo = m
+    FimeMetodo
+    
+    publico Metodo getModelo()
+        retorne ponta
+    FimMetodo
+    
+    publico Metodo setModelo()
+        (p: real)
+        ponta = p
+    FimMetodo
+    
+FimClasse
+
+c1 = nova Caneta
+
+c1.setModelo("BIC CRISTAL")
+
+c1.setPonta(0.5)
+
+Escreva(c1.getModelo())
+
+Método Construtor ou Construct, serve para construir um objeto sem precisar de toda a quantide de linhas que são criadas ao chamar diversos setters, esse método é chamado por padrão assim que o objeto é iniciado e normalmente pede paramentros.
+
+Exemplo em algoritimos:
+
+Classe Caneta
+
+    publico modelo: Caractere
+    privado ponta: Real
+    
+    publico Metodo construtor (m: Caractere, c: 
+    Caractere, p: Real)
+        
+        setModelo(m)
+        setCor(c)
+        setPonta(p)
+        tampar()
+    FimMetodo
+    
+    publico Metodo getModelo()
+        retorne modelo
+    FimMetodo
+    
+    publico Metodo setModelo()
+        (m: Caractere)
+        modelo = m
+    FimeMetodo
+    
+    publico Metodo getModelo()
+        retorne ponta
+    FimMetodo
+    
+    publico Metodo setModelo()
+        (p: real)
+        ponta = p
+    FimMetodo
+    
+FimClasse
+
+c1 = nova Caneta("BIC", "Azul", 0.5)
