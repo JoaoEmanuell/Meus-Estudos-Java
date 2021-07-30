@@ -1,0 +1,9 @@
+Caso uma propiedade seja definida como protegida ela pode ser alterada se você criar um novo objeto e chamar a propiedade:
+
+// Classe Mãe
+protected Tipo nome;
+
+// Classe filha
+
+Clasemãe nomeobjeto = new Classemãe();
+nomeobjeto.propiedadeprotejida = valor;
