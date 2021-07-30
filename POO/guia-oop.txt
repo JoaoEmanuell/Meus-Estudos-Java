@@ -1,0 +1,42 @@
+// Aula 01
+
+    OOP = Object Oriented Progame [Progamação Orientada a Objetos].
+
+    OOP é um paradigrima de progamação que facilita a escrita e a execução dos códigos.
+
+    Uma classe seria um molde de criação que permite a você criar diversos objetos.
+
+    Um objeto é uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e 
+    estado atual.
+
+    Todo objeto é formado por propiedades, métodos e status.
+
+// Aula 02
+
+    Propiedades = dados que serão guardados.
+
+    Métodos = funções que o objeto pode executar.
+
+    Status = status do objeto.
+
+    Criação de novos objetos:
+
+        Nomeclassemãe nomeobjeto = new Nomeclassemãe();
+        
+// Aula 03
+
+    Visibilidades:
+    
+    public = pode ser editado por qualquer classe
+    
+    private = so pode ser editado pela classe atual
+    
+    proteced = so pode ser editado pela classe atual e suas filhas
+    
+// Aula 04
+
+    Getters = Servem para retornar os dados de uma determinada propiedade, normalmente não tem paramentros.
+    
+    Setters = Servem para setar os dados de uma determinada propeidade, normalmente tem paramentros.
+    
+    Construct = É iniciado assim que a classe é chamada, serve para definir dados ao objeto sem que você precise escrever diversas linhas de setters, facilitando a beleza do código e o peso do mesmo, normalmente tem paramentros mas caso não tenha serve para definir um preset para o objeto.
