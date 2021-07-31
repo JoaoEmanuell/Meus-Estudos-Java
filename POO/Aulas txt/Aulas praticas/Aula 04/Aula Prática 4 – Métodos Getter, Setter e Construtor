@@ -1,0 +1,23 @@
+Construtor simples:
+
+    public nomeClasse(){
+        bloco;
+    }
+    
+Construtor complexo:
+
+    public nomeClasse(tipoparamentro, paramentro){
+        this.property = paramentro;
+    }
+    
+GETTERS
+
+    public TipoRetorno getProperty(){
+        return property;
+    }
+    
+SETTERS
+
+    public void setProperty(Tipoparamentro paramentro) {
+        this.Property = paramentro;
+    }

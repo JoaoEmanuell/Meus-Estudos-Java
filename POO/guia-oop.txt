@@ -47,3 +47,27 @@
     Construct = É iniciado assim que a classe é chamada, serve para definir dados ao objeto sem que você precise escrever diversas linhas de 
     setters, facilitando a beleza do código e o peso do mesmo, normalmente tem paramentros mas caso não tenha serve para definir um preset para o 
     objeto.
+    
+    Construtor simples:
+
+        public nomeClasse(){
+            bloco;
+        }
+        
+    Construtor complexo:
+
+        public nomeClasse(tipoparamentro, paramentro){
+            this.property = paramentro;
+        }
+        
+    GETTERS
+
+        public TipoRetorno getProperty(){
+            return property;
+        }
+        
+    SETTERS
+
+        public void setProperty(Tipoparamentro paramentro) {
+            this.Property = paramentro;
+        }
