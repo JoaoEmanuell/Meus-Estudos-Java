@@ -1,0 +1,199 @@
+A oop tem três pilares, abreviando a silga EHP
+
+EHP 
+
+Encapsulamento
+
+Herança
+
+Polimorfismo
+
+Um software encapsulado serve para atender um determinado padrão e para proteger o progamador de fazer danos ao software.
+
+Encapsular é ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+
+Você pode mandar mensagens para o objeto, o lugar entre as mensagens e o objeto é chamado de interface.
+
+Interface é uma lista de serviços fornecidos por um componente. É o conttato com o mundo exterior, que define o que pode ser feito com um objeto dessa classe.
+
+Encapsular não é obrigatório, mas é uma boa prática para produzir Classes mais eficientes.
+
+Vantagens do Encapsulamento:
+
+    1° Tornar mudanças invisíveis.
+    
+    2° Facilitar reutilização do código.
+    
+    3° Reduzir efeitos colaterais.
+    
+Como encapsular?
+
+ __________________
+| <<interface>>    |
+|  Controlador     |
+ ---------------
+| + ligar()        |
+| + desligar()     |
+| + abrirMenu()    |
+| + fecharMenu()   |
+| + maisVolume()   |
+| + menosVolume()  |
+| + ligarMudo()    |
+| + desligarMudo() |
+| + play()         |
+| + pause()        |
+ ------------------
+
+Geralmente todos os métodos de uma interface são publicos.
+
+Métodos abstratos em uma interface são aqueles que você diz que existe mas não progama eles.
+
+ __________________
+|ControleRemoto    |
+|------------------|
+| - volume         |
+| - ligado         |
+| - tocando        |
+|------------------|
+| + ligar()        |
+| + desligar()     |
+| + abrirMenu()    |
+| + fecharMenu()   |
+| + maisVolume()   |
+| + menosVolume()  |
+| + ligarMudo()    |
+| + desligarMudo() |
+| + play()         |
+| + pause()        |
+| - setVolume()    |
+| - getVolume()    |
+| - setLigado()    |
+| - getLigado()    |
+| - setTocando()   |
+| - getTocando()   |
+ ------------------
+
+Por conta do conceito de encapsulamento, todos as propiedades da classe são definidias como privadas ou protegidas, nunca como publicas.
+
+Algoritimo:
+
+    interface Controlador
+    // Métodos Abstratos
+    
+    publico abstrato Metodo ligar() 
+    publico abstrato Metodo desligar()
+    publico abstrato Metodo abrirMenu()
+    publico abstrato Metodo fecharMenu()
+    publico abstrato Metodo maisVolume()
+    publico abstrato Metodo menosVolume()
+    publico abstrato Metodo ligarMudo()
+    publico abstrato Metodo desligarMudo()
+    publico abstrato Metodo play()
+    publico abstrato Metodo pause()
+    FimInterface
+    
+    // Métodos Abstratos não é necessario escrever nenhum 
+    código.
+    
+    classe ControleRemoto
+    
+    // Atributos
+    
+    privado inteiro volume
+    privado logico ligado
+    privado logico tocando
+    
+    // Métodos Especiais
+    
+    publico Metodo Construtor()
+    
+        volume = 50
+        ligado = falso
+        tocando = falso
+    fimMetodo
+    
+    privado Metodo getVolume()
+        retorne volume
+    FimMetodo
+    
+    privado Metodo getLigado()
+        retorne ligado
+    FimMetodo
+    
+    privado Metodo getTocando()
+        retorne tocando
+    FimMetodo
+    
+    privado Metodo setVolume(v: inteiro)
+        volume = v
+    FimMetodo
+    
+    privado Metodo setLigado(l: logico)
+        ligado = l
+    FimMetodo
+    
+    privado Metodo setTocando(t: logico)
+        tocando = t
+    FimMetodo
+    
+    fimClasse
+    
+Para implementar a classe na interface escreva o seguinte:
+
+classe ControleRemoto implementa Controlador
+
+// Agora você precisa reescrever os métodos
+    
+    publico Metodo ligar()
+        setLigado(verdadeiro)
+    FimMetodo
+    
+    publico Metodo desligar()
+        setLigado(falso)
+    FimMetodo
+    
+    publico Metodo abrirMenu()
+        Escreva(getLigado())
+        Escreva(getVolume())
+        Para i = 0 ate getVolume() passo 10 faca
+            Escreva("|")
+        FimPara
+        Escreva(getTocando())
+    FimMetodo
+    
+    publico Metodo fecharMenu()
+        Escreva("Fechando Menu...")
+    FimMetodo
+    
+    publico Metodo maisVolume()
+        Se (getLigado()) entao
+            setVolume(getVolume() + 1)
+        FimSe
+    FimMetodo
+    
+    publico Metodo menosVolume()
+        Se (getLigado()) entao
+            setVolume(getVolume() - 1)
+        FimSe
+    FimMetodo
+    
+    publico Metodo ligarMudo()
+        se (getLigado() e getVolume() > 0) entao
+            setVolume(0)
+    FimMetodo
+    
+    publico Metodo desligarMudo()
+        se (getLigado() e getVolume() = 0) entao
+            setVolume(50)
+    FimMetodo
+    
+    publico Metodo play()
+        se (getLigado() e nao getTocando()) entao
+            setTocando(verdadeiro)
+    FimMetodo
+    
+    publico Metodo pause()
+        se (getLigado() e getTocando()) entao
+            setTocando(falso)
+    FimMetodo
+FimClasse
