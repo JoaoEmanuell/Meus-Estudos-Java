@@ -1,0 +1,10 @@
+public interface nomeinterface {} // cria uma interface
+
+visibilidade abstract tiporetorno nome(); // cria um método abstrato
+
+public class NomeClasse implements Interface{} // na primeira linha da classe, coloque isso para ele fazer a ligação da interface com a classe.
+
+@Override
+public void nomemetodoabstrato() {
+
+} // se ele não for criado automaticamente, isso fara com que ele sobescreva o método abstrato da interface no código da sua classe.
