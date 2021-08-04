@@ -1,0 +1,119 @@
+ ________________________
+|         Luta           |
+|------------------------|
+| - desafiado            |
+| - desafiante           |
+| - rounds               |
+| - aprovada             |
+|------------------------|
+| + marcarLuta()         |
+| + lutar()              |
+|________________________|
+
+Sempre que você agrega duas classes, nas regras da oml, você desenha uma linha saindo da classe A e indo pra classe B, onde a linha ia encostar na classe B vc desenha um retangulo e sobre a linha coloque o nome e ao lado do losangulo você coloca a quantidade de vezes que a classe A pode participar da classe B.
+
+Algoritimos:
+
+classe Luta
+    // Atributos
+
+    privado desafiado : Lutador
+    privado desafiante : Lutador
+    privado rounds : Inteiro
+    privado aprovada : Lógico
+    
+    // Métodos
+    
+    publico metodo marcarLuta()
+        (...)
+    fim metodo
+    publico metodo lutar()
+        (...)
+    fim metodo
+    
+    // Métodos Especiais
+    
+    publico metodo setDesafiado(dd: Lutador)
+        desafiado = dd
+    fim metodo
+    publico metodo getDesafiado()
+        retorne desafiado
+    fim metodo
+    
+FimClasse
+
+O tipo primitivo de desafiado e desafiante é Lutador, Lutador é um tipo abstrato que se relaciona com um objeto da classe Lutador.
+
+Regras da luta
+
+Só pode ser marcada entre lutadores da mesma caregoria.
+
+Desafiado e desafiante devem ser lutadores diferentes.
+
+Só pode acontecer se estiver aprovada.
+
+Só pode ter como resultado a vitória de um dos lutadores ou o empate.
+
+classe Luta
+
+// Métoos
+
+    publico metodo marcarLuta(l1, l2: Lutador)
+        se (l1.getCategoria() = l2.getCategoria())
+        e (l1 != l2) entao
+            aprovada = verdadeiro
+            desafiado = l1
+            desafiante = l2
+        senao
+            aprovada = falso
+            desafiado = nulo
+            desafiante = nulo
+        fim se
+    fim metodo
+    
+    publico metodo lutar()
+        se (aprovada)
+            desafiado.apresentar()
+            desafiante.apresentar()
+            vencedor = aleatório(0..2)
+            escolha (vencedor)
+                caso 0: // Empate
+                    Escreva("Empatou!")
+                    desafiado.empatarLuta()
+                    desafiante.empatarLuta()
+                caso 1: // Ganhou Desafiado
+                    Escreva(desafiado.getNome())
+                    desafiado.ganharLuta()
+                    desafiante.perderLuta()
+                caso 2: // Ganhou Desafiante
+                    Escreva(desafiante.getNome())
+                    desafiante.ganharLuta()
+                    desafiado.perderLuta()
+                fim escolha
+        senao
+            escreva("Luta não pode acontecer")
+        fim se
+    fim metodo
+fim classe
+
+// Progama Principal
+
+    l: vetor[0..5]
+    
+    l[0] = novo Lutador("Pretty Boy", "França", 31, 1.75, 68.9, 11, 
+    2, 1)
+    
+    l[1] = novo Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 
+    2, 3)
+
+    UEC01 = novo Luta()
+    UEC01.marcarLuta(l[0], l[1]))
+    UEC01.lutar()
+
+clase Lutador
+    (...)
+FimClasse
+
+classe Luta
+    (...)
+FimClasse
