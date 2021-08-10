@@ -1,0 +1,3 @@
+visibilidade TipoAbstrato nome; // cria uma propiedade com tipo abstrato
+
+visibilidade TipoAbstrato get/setnome(paramentros){bloco}; // cria um método que tem um tipo abstrato.
