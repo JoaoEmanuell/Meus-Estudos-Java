@@ -354,3 +354,5 @@ MigrationBackup/
 README.md~
 guia-oop.txt~
 .gitiginore~
+Curso antigo/
+*.class
